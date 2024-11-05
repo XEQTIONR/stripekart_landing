@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Stripekart - The easiest way to shop in Bangladesh </title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+  <link href="animate.css" rel="stylesheet">
+
+  <style>
+
+    body{
+      overflow: hidden;
+      font-family: Open Sans, sans-serif;
+      font-weight: 600;
+      color: #4e4f4f;
+    }
+    img{
+      width: 80%;
+      max-width: 600px;
+      margin: 0;
+      padding: 0;
+      z-index: 2;
+    }
+
+    img.small{
+      max-width: 150px;
+      min-width: 150px;
+      height: auto;
+      z-index: 2;
+    }
+
+    .row{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin: 0;
+      padding: 0;
+      z-index: 2;
+    }
+
+    .col{
+      width: 33%;
+      float: left;
+      z-index: 2;
+    }
+    .bars-container{
+      width: 80vw;
+      min-width: 500px;
+      height: 40vw;
+      -ms-transform: rotate(-50deg) translate(-25vh, -42vw); /* IE 9 */
+      -webkit-transform: rotate(-50deg) translate(-25vh, -42vw); /* Safari prior 9.0 */
+      transform: rotate(-50deg) translate(5vh, -42vw); /* Standard syntax */
+      z-index: -5;
+    }
+    .bar{
+      width: 60%;
+      height: 24%;
+      margin : 2%;
+      background-color: pink;
+      z-index: -5;
+      opacity: .2;
+    }
+    .blue-bar{
+      background-color: #36c5f0;
+      width: 90%;
+    }
+    .red-bar{
+      background-color: #e01e5a;
+      width: 75%;
+    }
+    .yellow-bar{
+      background-color: #ecb22e;
+      width: 60%;
+    }
+
+
+    .img-icon{
+      display: block;
+      margin: auto;
+      width : 50px;
+      height: 50px;
+    }
+
+    p,h1,h2,h3,h4,h5,h6{
+      text-align: center;
+      z-index: 4;
+    }
+  </style>
+</head>
+<body>
+  <div class="row" style="width: 100vw; height : 50vh">
+    <img class="animated fadeInLeft" src="logo1920.png">
+  </div>
+  <div class="row">
+    <h2 class="animated fadeIn delay-1s">COMING SOON</h2>
+  </div>
+  <div class="row">
+    <img class="small animated fadeIn slower delay-1s" src="AppLogo.png">
+  </div>
+  <div class="row" style="height: 10vh; ">
+   <h3 class="animated fadeIn delay-1s">On</h3>
+  </div>
+  <div class="" style="position:absolute; bottom: 0; height: 10vh; width:100vw; z-index: 2;">
+    <div class="col"> <img class="img-icon animated fadeIn faster  delay-1s" src="applelog.svg" width="50"> </div>
+    <div class="col"> <img class="img-icon animated fadeIn  delay-1s" src="android.svg"> </div>
+    <div class="col"> <img class="img-icon animated fadeIn slower delay-1s" src="web.svg"> </div>
+  </div>
+
+  <div class="bars-container">
+    <div class="bar blue-bar  animated fadeInLeft faster delay-2s"></div>
+    <div class="bar red-bar  animated fadeInLeft fast delay-2s"></div>
+    <div class="bar yellow-bar  animated fadeInLeft delay-2s"></div>
+  </div>
+</body>
+</html>
